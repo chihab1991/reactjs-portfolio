@@ -2,7 +2,7 @@ import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 const ContactMe = () => {
-	const form = useRef<HTMLInputElement>(null);
+	const form = useRef<HTMLFormElement>(null);
 
 	const handleSubmit = async (
 		e: React.FormEvent<HTMLFormElement>
