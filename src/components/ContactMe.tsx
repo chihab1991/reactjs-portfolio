@@ -4,11 +4,13 @@ import emailjs from "@emailjs/browser";
 const ContactMe = () => {
 	const form = useRef();
 
-	const handleSubmit = async (e): void => {
+	const handleSubmit = async (
+		e: React.FormEvent<HTMLFormElement>
+	): Promise<void> => {
 		e.preventDefault();
 
 		emailjs
-			.sendForm("service_xrlcnup", "template_ebflcbl", form.current, {
+			.sendForm("service_xrlcnup", "template_ebflcbl", form.current!, {
 				publicKey: "ydD0vJtV6UcRDwwg7",
 			})
 			.then(
@@ -19,7 +21,7 @@ const ContactMe = () => {
 					console.log("FAILED...", error.text);
 				}
 			);
-		e.target.reset();
+		e.currentTarget.reset();
 	};
 
 	return (
