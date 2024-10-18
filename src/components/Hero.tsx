@@ -8,8 +8,8 @@ const Hero = () => {
 		>
 			<div className="container mx-auto px-6 md:px-12 text-center md:text-left">
 				<h1 className="text-4xl md:text-6xl font-bold leading-tight">
-					Hi, I'm <span className="text-warmOrange">Your Name</span>, <br />a
-					Full Stack Web Developer
+					Hi, I'm <span className="text-warmOrange">Chergui Chihab Iddine</span>
+					, <br />a Full Stack Web Developer
 				</h1>
 				<p className="mt-4 text-lg md:text-xl text-coolGray max-w-lg">
 					I specialize in building fast, responsive, and scalable websites using
